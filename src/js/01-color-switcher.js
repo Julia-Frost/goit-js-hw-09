@@ -14,12 +14,11 @@ function bodyColorOn() {
 
 function getBodyColor() {
   body.style.cssText = `background-color:${getRandomHexColor()}`;
-
   Notiflix.Notify.info(`Цвет изменён на ${getRandomHexColor()}`);
 }
 
 function bodyColorOff() {
-  startBtn.setAttribute('disabled', false);
+  startBtn.removeAttribute('disabled', false);
   clearTimeout(timerId);
 }
 
