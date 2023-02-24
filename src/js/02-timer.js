@@ -47,6 +47,7 @@ function startTime() {
 
     if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
       clearInterval(timerId);
+      startEl.disabled = false;
       Notiflix.Notify.warning('Отсчёт закончился!');
       timerId = null;
     }
